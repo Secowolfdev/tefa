@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Yeseva+One&display=swap');
+
+body {
+  background-image: url(./images/backgroud.jpeg);
+}
+
+.header {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-image: url(./images/lv_0_20220928230728.mp4);
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  left: 300px;
+  background-color: #000;
+}
+
+.main {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border: solid 1px #000;
+  padding: 20px;
+}
+
+.foto1 {
+  height: 300px;
+  width: 300px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Yeseva One', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+p {
+  font-family: 'Arapey', cursive;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+div {
+  text-align: center;
+}
+
+.foto-final {
+  width: 13rem;
+  height: 150px;
+  float: left;
+  margin-right: 90px;
+}
+
+.final {
+  position: relative;
+}
+
+@media (max-width: 70px) {
+  .foto-final {
+    width: 800rem;
+    float: left;
+    margin-right: 80px;
+  }
+}
+
+/* From Uiverse.io by ahmed150up */ 
+.audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  background-color: #282828;
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.album-cover {
+  width: 94px;
+  height: 94px;
+  background-image: url(images/download.jpeg);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.player-controls {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-info {
+  margin-bottom: 4px;
+}
+
+.song-title {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+.artist {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #4f4f4f;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background-color: #1db954;
+  transform-origin: left;
+  animation: progress-animation 10s linear infinite;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.play-btn,
+.pause-btn {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-btn:hover,
+.pause-btn:hover {
+  transform: scale(1.2);
+}
+
+@keyframes progress-animation {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.contador {
+      font-size: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #EF4444, #89B8FF);
+      -webkit-background-clip: text;
+      color: transparent;
+      user-select: none;
+    }
+.timer {
+  color: #fff;
+  width: 400px;
+  height: 200px;
+  background-color: #282828;
+  border-radius: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 10%;
+}
+
+#emoji-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* não interfere com cliques */
+  overflow: hidden;
+  z-index: 0; /* atrás do conteúdo */
+}
+
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: cair 5s linear infinite;
+  user-select: none;
+}
+
+@keyframes cair {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* From Uiverse.io by faxriddin20 */ 
+.btn {
+  height: 4em;
+  width: 12em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0px solid black;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 100%;
+  margin-top: 10%;
+}
+
+.wrapper {
+  height: 2em;
+  width: 8em;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 17px;
+  z-index: 1;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: none 0.5s;
+}
+
+.flower {
+  display: grid;
+  grid-template-columns: 1em 1em;
+  position: absolute;
+  transition: none 0.5s;
+}
+
+.flower1 {
+  top: -12px;
+  left: -13px;
+  transform: rotate(5deg);
+}
+
+.flower2 {
+  bottom: -5px;
+  left: 8px;
+  transform: rotate(35deg);
+}
+
+.flower3 {
+  bottom: -15px;
+  transform: rotate(0deg);
+}
+
+.flower4 {
+  top: -14px;
+  transform: rotate(15deg);
+}
+
+.flower5 {
+  right: 11px;
+  top: -3px;
+  transform: rotate(25deg);
+}
+
+.flower6 {
+  right: -15px;
+  bottom: -15px;
+  transform: rotate(30deg);
+}
+
+.petal {
+  height: 1em;
+  width: 1em;
+  border-radius: 40% 70% / 7% 90%;
+  background: violet;
+  border: 0.5px solid purple;
+  z-index: 0;
+  transition: width 0.4s, height 0.4s step-start;
+}
+
+.two {
+  transform: rotate(90deg);
+}
+
+.three {
+  transform: rotate(270deg);
+}
+
+.four {
+  transform: rotate(180deg);
+}
+
+.btn:hover .petal {
+  background: violet;
+  border: 0.5px solid purple;
+}
+
+.btn:hover .flower {
+  grid-template-columns: 1.5em 1.5em;
+}
+
+.btn:hover .flower .petal {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn:hover .text {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover div.flower1 {
+  animation: 15s linear 0s normal none infinite running flower1;
+}
+
+@keyframes flower1 {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.btn:hover div.flower2 {
+  animation: 13s linear 1s normal none infinite running flower2;
+}
+
+@keyframes flower2 {
+  0% {
+    transform: rotate(35deg);
+  }
+
+  100% {
+    transform: rotate(-325deg);
+  }
+}
+
+.btn:hover div.flower3 {
+  animation: 16s linear 1s normal none infinite running flower3;
+}
+
+@keyframes flower3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn:hover div.flower4 {
+  animation: 17s linear 1s normal none infinite running flower4;
+}
+
+@keyframes flower4 {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(375deg);
+  }
+}
+
+.btn:hover div.flower5 {
+  animation: 20s linear 1s normal none infinite running flower5;
+}
+
+@keyframes flower5 {
+  0% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(-335deg);
+  }
+}
+
+.btn:hover div.flower6 {
+  animation: 15s linear 1s normal none infinite running flower6;
+}
+
+@keyframes flower6 {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(390deg);
+  }
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card-container {
+  margin-top: 10%;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.card .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transition: scale 0.6s, rotate 0.6s, filter 1s;
+}
+
+.card .img-content svg {
+  width: 0px;
+  height: 0px;
+  fill: #ffffff;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7); /* preto com 10% de opacidade */
+  padding: 20px 10px;
+  line-height: 1.0;
+  border-radius: 10px;
+  font-size: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .img-content {
+  scale: 2.5;
+  rotate: 30deg;
+  filter: blur(7px);
+}
+
+.card:hover .img-content svg {
+  fill: transparent;
+}
+
+.img-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* opcional */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 200px; /* ajuste conforme necessário */
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
